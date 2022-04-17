@@ -1,0 +1,68 @@
+@font-face {
+	font-family: PressStart2P;
+	src:url(./fonts/PressStart2P.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    font-family: 'PressStart2P', cursive;
+    -webkit-font-smoothing: antialiased;
+}
+
+.dino {
+    position: absolute;
+    bottom: 10px;
+    background-image: url('imgs/dino.png');
+    width: 88px;
+    height: 94px;
+    background: transparent;
+}
+
+.cactus {
+    position: absolute;
+    width: 34px;
+    height: 70px;
+    bottom: 10px;
+    background-image: url('imgs/cactus.png');
+}
+
+.game-over {
+    text-align: center;
+    color: #666;
+    margin: 50px 0;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0px;
+    background-image: url('imgs/background.png');
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 250px;
+}
+
+.background-animation {
+    animation: slideright 1500s infinite linear;
+    -webkit-animation: slideright 1500s infinite linear;
+    height: 300px;
+}
+
+.title {
+    text-align: center;
+    color: #666
+    letter-spacing: 3px;
+    margin: 50px 0;
+}
